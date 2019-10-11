@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "lighthouse",
+  "db": "mongodb://localhost/lighthouseRoster"
+}

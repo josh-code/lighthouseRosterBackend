@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "lighthouseRoster_jwtPrivateKey",
+  "db": "lighthouseRoster_db"
+}
