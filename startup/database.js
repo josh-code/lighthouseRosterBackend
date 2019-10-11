@@ -5,7 +5,7 @@ const config = require("config");
 const db = config.get("db");
 module.exports = function() {
   mongoose.set("useCreateIndex", true);
-  mongoose.set("useNewUrlParser", true);
+  // mongoose.set("useNewUrlParser", true);
 
   mongoose.connect(db).then(() => winston.info(`connected to ${db}`));
 };
