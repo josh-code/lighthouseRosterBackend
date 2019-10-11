@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Roster, validate: validateReturn } = require("../models/Roster");
+const { Roster, validate: validateReturn } = require("../models/roster");
 const validate = require("../middleware/validate");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
