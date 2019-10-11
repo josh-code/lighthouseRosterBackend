@@ -8,7 +8,8 @@ const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
 const validate = require("../middleware/validate");
 
-router.get("/", [auth, admin], async (req, res) => {
+// router.get("/", [auth, admin], async (req, res) => {
+router.get("/", async (req, res) => {
   console.log("check");
   const users = await User.find().select("-password");
   console.log(users);
