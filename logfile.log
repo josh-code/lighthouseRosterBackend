@@ -24,3 +24,5 @@
 {"level":"error","message":"Cannot set headers after they are sent to the clientCannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:482:11)\n    at ServerResponse.header (F:\\javascript\\My projects\\Lighthouse Roster\\backend\\lighthouseRoster\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (F:\\javascript\\My projects\\Lighthouse Roster\\backend\\lighthouseRoster\\node_modules\\express\\lib\\response.js:170:12)\n    at router.get (F:\\javascript\\My projects\\Lighthouse Roster\\backend\\lighthouseRoster\\routes\\rosters.js:50:28)\n    at processTicksAndRejections (internal/process/task_queues.js:86:5)"}
 {"message":"Listning on port 3900...","level":"info"}
 {"message":"connected to mongodb://localhost/lighthouseRoster","level":"info"}
+{"message":"Listning on port 3900...","level":"info"}
+{"message":"connected to mongodb://localhost/lighthouseRoster","level":"info"}
