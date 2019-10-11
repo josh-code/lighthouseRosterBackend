@@ -14,3 +14,5 @@ if (process.env.NODE_ENV !== "test") {
   app.listen(port, () => winston.info(`Listning on port ${port}...`));
   console.log("not in test");
 }
+
+module.exports = app;
