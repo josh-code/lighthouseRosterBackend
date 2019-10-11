@@ -10,6 +10,7 @@ const validate = require("../middleware/validate");
 
 router.get("/", [auth, admin], async (req, res) => {
   const users = await User.find().select("-password");
+  console.log("Done");
   res.send(users);
 });
 
