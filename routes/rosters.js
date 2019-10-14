@@ -82,7 +82,7 @@ router.put("/:id", [validate(validateReturn)], async (req, res) => {
 });
 
 router.put("/updateUserRoster/:id", auth, async (req, res) => {
-  if (!req.body.id) res.status(404).send("Roster does not exist.");
+  if (!req.body._id) return res.status(404).send("Roster does not exist.");
   const roster = await Roster.findById(req.body._id);
   roster.data[req.body.index].status = req.body.role.status;
   const updatedRoster = await Roster.findByIdAndUpdate(
