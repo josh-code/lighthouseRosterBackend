@@ -8,7 +8,14 @@ const Joi = require("joi");
 Joi.objectId = require("joi-objectid")(Joi);
 
 router.get("/upcomingSunday", async (req, res) => {
-  const rosters = await Roster.find().gte("date", new Date());
+  const rosters = await Roster.find().gte(
+    "date",
+    new Date(
+      new Date().getFullYear(),
+      new Date().getMonth(),
+      new Date().getDate()
+    )
+  );
   let date = new Date();
   let upcomingSunday;
   if (date.getDay() > 0) {
